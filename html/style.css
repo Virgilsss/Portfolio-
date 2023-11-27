@@ -9,6 +9,21 @@ body{
    background-color: rgba(20, 10, 10, 23) ; 
 }
 
+.hidden {
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
+
+}
+
+
+.show{
+opacity:1;
+filter: blur(0);
+transform: translateX(0);}
+
+
 .header{
     font-family: monospace;
    
@@ -23,8 +38,22 @@ body{
 .content {
     display: flex;
     flex-wrap: wrap;
+   margin-top:40px;
   }
-  
+
+.content .text{
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+   justify-content:center;
+  align-items:center;
+  }
+
+.content .text p{
+  margin-left:20px;
+min-height:100vh;
+  margin-right:20px;
+}
   .text {
     width: 100%;
 color:white;
@@ -105,7 +134,7 @@ color:white;
   /* Your styles for right links here */
   /* For example: */
    display:flex;
-   
+ flex-wrap:wrap;  
   list-style: none;
   padding: 0;
    background-color: #00
