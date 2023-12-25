@@ -23,16 +23,114 @@ opacity:1;
 filter: blur(0);
 transform: translateX(0);}
 
-
 .header{
-    font-family: monospace;
-   
-   
-    flex-wrap: wrap;
-    
-    
-
+  display:flex;
+  flex-wrap:wrap;
+  margin:
+  transform: translate(-50%, -50%);
+  height: 42px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  color: #ecf0f1;
 }
+.content_container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+
+
+.name_text {
+  display: inline;
+  
+  margin: 0px;
+}
+.content_container_list {
+  margin-top: -1;
+  padding-left: 30px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content_container_list_item {
+  line-height: 40px;
+  margin-bottom:1px;
+  margin-left: 160px;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 10% {
+    transform: translate3d(0, -25%, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -50%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0%, -75%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -75%, 0);
+  }
+  83.3%, 95.65%, {
+    transform: translate3d(-0 -50%, 0);
+  }
+   @keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+   
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, -25%, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -50%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -75%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -75%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -50%, 0);
+  }
+  95.97%, 99.9% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+
 
 
 .content {
@@ -63,27 +161,46 @@ color:white;
   
 .nav-bar
 {
-    
-    display: flex;
+    list-style:none;
+     flex-grow: 1;
+     display: flex;
+    margin-left:50px;
+  letter-spacing:-1px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
-     padding-top: 15px;
+     padding-top: 10px;
     background: #40E0D0;
 }
 
+.navbar-link{
+font-size:20px;
+  font-weight:600;
+font-family: "Lato", sans-serif;
+}
 
 
+.name{
 
-.logo{
-
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 900;
     color: rgba(235, 235, 235, 0.651);
     /*background: tan;*/
     padding: 4px 32px;
+    flex-wrap:wrap;
+   letter-spacing:-2px;
+    /*border: 7px solid rgb(207, 13, 13);*/
     
+    /*display: flex;
+    flex: 1 1 auto;
+    background-color: bisque;
+    justify-content: center;
+    border: none;
+    border-color: black;
+    border-radius: 8px;
     
+    padding: 8px 24px;
+    margin: 10px;*/
     
 }
 
@@ -98,58 +215,6 @@ color:white;
     
 }
 
-.nav-bar .left-links ul {
-  /* Your styles for right links here */
-  /* For example: */
-   display:flex;
-   flex-wrap:wrap;
-  list-style: none;
-  padding: 0;
-   background-color: #00
-}
-
-.nav-bar .left-links ul a {
-  display:flex;
-   justify-content:space-between;
-   background-color:azure;
-   padding-left:10px;
-   padding-right:20px;
-   margin-right:10px;
-   border-radius:10px;
-   flex-direction:row;
-}
-
-.nav-bar .right-links ul {
-  /* Your styles for right links here */
-  /* For example: */
-   display:flex;
- flex-wrap:wrap;  
-  list-style: none;
-  padding: 0;
-   background-color: #00
-}
-
-.nav-bar .right-links ul li a {
-  display:flex;
-   justify-content:space-between;
-   background-color:azure;
-   padding-left:10px;
-   padding-right:20px;
-   margin-right:10px;
-   border-radius:10px
-   
-   
-}
-
-
-a{
-    font-size: 22px;
-    /*background: white;*/
-    flex-direction: row;
-    
-    padding: 8px;
-    text-decoration: none;
-}
 
 footer{
     position: absolute;
