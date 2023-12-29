@@ -229,6 +229,7 @@ footer{
     color: aliceblue;
 }
 .footer-content{
+    color:#fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,6 +244,7 @@ footer{
     line-height: 3rem;
 }
 
+ 
 .footer-content p{
    max-width: 500px;
    margin: 10px auto;
@@ -252,24 +254,20 @@ footer{
 }
 
 .socials{
-    
+     font-size:45px;   
     list-style: none ;
     display: flex;
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
 
-.socials li{
-    margin: 0 10px;
 
-}
 
 .socials a{
     
     text-decoration: none;
     color: #fff;
- font-size: 1.1rem;
-    transition:color .8s ease ;	
+ font-size: 30px;	
 }
 
 
@@ -280,7 +278,8 @@ footer{
 
 .footer-bottom{
     background: rgb(0, 0, 0);
-    width: 100vw;
+    width: 100vw; 
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
